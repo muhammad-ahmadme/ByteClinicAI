@@ -1,3 +1,4 @@
 flask
 sambanova
 gunicorn
+flask-cors
