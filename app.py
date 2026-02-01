@@ -27,11 +27,7 @@ def chat():
         response = client.chat.completions.create(
             model="Llama-4-Maverick-17B-128E-Instruct",
             messages=[
-                {"role": "system", "content": "You are ByteClinic AI, a helpful technology assistant.
-You specialize in giving advice about coding, apps, computers, devices, and AI.
-Always respond clearly, step-by-step when needed, and in a friendly, professional tone.
-Do not give personal opinions outside tech topics.
-"""."},
+               {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": message},
             ],
             max_tokens=200,
